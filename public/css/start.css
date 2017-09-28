@@ -1,0 +1,93 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+
+    Author     : Jokie
+*/
+
+@import 'task.css';
+@import 'logreg.css';
+@import 'styles.scss';
+@import 'show.css';
+
+body{
+ background-color:#e4d5aa;    
+}
+
+.btn-container{
+    height: 250px;
+    width: auto;
+    margin-top: 200px;
+}
+
+.one
+{
+    height: 180px;
+    width: 220px;
+    float:  left;
+    margin: 40px 0 0 300px;
+    text-align: center;
+}
+
+.two{
+
+    height: 180px;
+    width: 220px;
+    float:  left;
+    margin: 40px 0 0 450px;
+    text-align: center;
+}
+.three{
+    height: 180px;
+    width: 220px;
+    float:  left;
+    margin: 40px 0 0 450px;
+    text-align: center;
+}
+
+#btn-form{
+    color: #e4d5aa;
+    font-size: 19px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid black;
+    transition: all 0.5s;
+    cursor: pointer;
+    	
+    box-shadow: 5px 5px rgba(0,0,0,0.5); 
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cedbe9+0,aac5de+17,6199c7+50,3a84c3+51,419ad6+59,4bb8f0+71,3a8bc2+84,26558b+100;Blue+Gloss */
+    background: rgb(206,219,233); /* Old browsers */
+    background: -moz-linear-gradient(top, rgb(206,219,233) 0%, rgb(170,197,222) 17%, rgb(97,153,199) 50%, rgb(58,132,195) 51%, rgb(65,154,214) 59%, rgb(75,184,240) 71%, rgb(58,139,194) 84%, rgb(38,85,139) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgb(206,219,233) 0%,rgb(170,197,222) 17%,rgb(97,153,199) 50%,rgb(58,132,195) 51%,rgb(65,154,214) 59%,rgb(75,184,240) 71%,rgb(58,139,194) 84%,rgb(38,85,139) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgb(206,219,233) 0%,rgb(170,197,222) 17%,rgb(97,153,199) 50%,rgb(58,132,195) 51%,rgb(65,154,214) 59%,rgb(75,184,240) 71%,rgb(58,139,194) 84%,rgb(38,85,139) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=0 ); /* IE6-9 */
+}
+
+#btn-form #span-hover {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#btn-form #span-hover:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#btn-form:hover #span-hover {
+  padding-right: 25px;
+}
+
+#btn-form:hover #span-hover:after {
+  opacity: 1;
+  right: 0;
+}

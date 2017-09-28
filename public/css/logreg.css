@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+
+    Author     : Jokie
+*/
+
+/* Eigenes CSS für die Registrierung und Login*/
+.container-logreg{
+    height:600px;
+    width: 450px;
+    margin:auto;
+    border-radius: 20px;
+}
+.form-control{
+    font-size: 15px;
+    height:25px;
+    width: 400px;
+    margin-left: 20px;    
+}
+
+.control-label{
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.panel-heading{
+    color: black;
+    font-size:18px;
+    margin-top:20px; 
+    margin-left:20px;
+}
+.btn-link{
+    color: black;
+    font-size:12px;
+    margin-left:25px;
+}
+
+.checkbox{
+    margin-left:16px;
+}
+
+.btn-primary{
+    height:40px;
+    width: 80px;
+    margin-left:23px;
+}
+
+#btn-primary-login{
+    margin-top:18px;  
+}
+
+#btn-primary-register{
+    height:40px;
+    width: 80px;
+    margin-top:25px;
+}
+
+
