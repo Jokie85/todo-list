@@ -2,7 +2,7 @@
 
 @section('content')
 <marquee scrollamount="10" >
- <h1 class="run">Todo Liste</h1> </marquee>
+ <h1 class="run">To-Do Liste</h1> </marquee>
 
 <div class="btn-container">
     <!-- Dieser Container wird bei der nächsten Erweiterung aktiv -->
