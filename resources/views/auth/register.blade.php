@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<a href="/start" class="rainbow-button" alt="Zurück"></a>
+<a href="/login" id="back-button" class="rainbow-button" alt="Zurück"></a>
 <div class="container-logreg">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">

@@ -24,8 +24,14 @@ and open the template in the editor.
 }
 
 .delete-task{
+    float: right;
     color: white;
     background-color:  #CC3300;
+    border-radius: 6px;
+}
+.todo-task{
+    color: white;
+    background-color: #4169E1;
     border-radius: 6px;
 }
 
@@ -35,12 +41,17 @@ and open the template in the editor.
     margin-left: 20px;
 }
 
+#table-head-background{
+    background-color: white;   
+}
+
 .table-task{
-    background-color: whitesmoke;
+   
     margin: auto;
-    width:80%;
+    min-width: 55%;
+    width:auto;
     border-radius: 10px;
-    border:3px solid #f0c851; 
+    border:3px solid brown; 
 }
 
 .table-task tr{
@@ -69,50 +80,25 @@ and open the template in the editor.
 }
 /*Farbwechsel Tabellen Zeilen*/
 .table-task-row:nth-child(even){
-    background: lightyellow;
+    background:rgba(228, 213, 170, 0.9);
 }
 /*Farbwechsel Tabellen Zeilen*/
 .table-task-row:nth-child(odd){
-    background: lightgrey;  
+    background: rgba( 255, 255, 255, 0.9);  
 }
 
 .back-button{
     margin: 60px 0 0 0;
 }
 
+#button-td{
+    width: 380px;
+}
 
 
 
-/*https://codepen.io/lemmin/pen/WObwRX*/
-a {
-  text-decoration:none;
-  color:#FFF;
-  margin: 20px 0 0 20px;
-}
-.rainbow-button {
-  width:calc(6vw + 6px);
-  height:calc(2vw + 6px);
-  background-image: linear-gradient(90deg, #00FF00 0%, #00CC00 49%, #009900 80%, #006600 100%);
-  border-radius:5px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-transform:uppercase;
-  font-size:1vw;
-  font-weight:bold;
-}
-.rainbow-button:after {
-  content:attr(alt);
-  width:6vw;
-  height:2vw;
-  background-color:#191919;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-.rainbow-button:hover {
-  animation:slidebg 4s linear infinite;
-}
+
+
 
 
 

@@ -1,0 +1,98 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+
+    Author     : Jokie
+*/
+
+
+.label-headings{
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+#addTask{
+    height:auto;
+    width: 48%;
+    margin:auto;
+    margin-top: 60px;
+    border-radius: 20px; 
+    background-color: rgba(228, 213, 170, 0.8);
+    padding-bottom: 50px;
+    border: 3px solid brown;
+}
+
+#tarea-task{
+    width: 400px;
+    margin-left: 20px; 
+}
+
+#visibility{
+    visibility: hidden;
+}
+
+#submit-task{
+    height:40px;
+    width: 110px;
+    margin: 0px 20px 0 0px;
+    float: right;
+}
+
+#redirect-text{
+    margin:15px 10px;   
+}
+
+#change-category{
+    float: left 
+}
+#addcategory{
+    float: left   
+}
+
+.heading-text{
+    margin-top: 100px;
+}
+
+.line{ 
+    margin: 10px 0 10px;
+    height: 2px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgb(219, 145, 79)), to(rgb(219, 145, 79)), color-stop(50%, brown));
+}
+
+#h1-main-titel{
+    color: dimgray;
+    margin: -20px 0 0 10px;
+}
+
+#changeCat{
+    height: 30px;
+    width:180px;
+}
+.more-inputs{
+    height: 30px;
+    width: 50px;
+    border-radius: 10%;
+    border-color: #a7a7a7;
+    background-color:  #FFFF66 ;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold    
+}
+
+.remove_field{
+    height: 30px;
+    width: 50px;
+    color:white;
+    background-color:  #FF3333 ;
+    border-radius: 10%;
+    border-color: #a7a7a7;
+    margin: 0 0 0 10px;
+}
+
+#addCat{
+    background-color: rgba(193,193,193, 0.8);
+}

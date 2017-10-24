@@ -10,10 +10,13 @@ and open the template in the editor.
 
 /* Eigenes CSS für die Registrierung und Login*/
 .container-logreg{
-    height:600px;
+    height:auto;
     width: 450px;
     margin:auto;
+    padding-bottom: 10px;
     border-radius: 20px;
+    background-color: rgba(228, 213, 170, 0.8);
+    border: 3px solid brown;
 }
 .form-control{
     font-size: 15px;

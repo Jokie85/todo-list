@@ -14,39 +14,91 @@ class TaskTableSeeder extends Seeder
     //php artisan db:seed --class=TaskTableSeeder
     public function run()
     {
-             DB::table('list')->insert([
-            'user_id' => 1,
-            'category' => 'Sport',
-            'heading' => 'Fussball',
-            'description' => '-Bälle kaufen',
-            'done' => 0,
+             DB::table('category')->insert([
+            'cat_name' => 'Sport',
             'created_at' => '2017-09-13 00:00:00',
             'updated_at' => '2017-09-13 00:00:00',
         ]);
-            DB::table('list')->insert([
-            'user_id' => 1,
-            'category' => 'Sport',
-            'heading' => 'Handball',
-            'description' => '- Bälle kaufen',
-            'done' => 1,
+            DB::table('category')->insert([
+            'cat_name' => 'Politik',
             'created_at' => '2017-09-13 00:00:00',
             'updated_at' => '2017-09-13 00:00:00',
         ]);
-            DB::table('list')->insert([
-            'user_id' => 1,
-            'category' => 'Politik',
-            'heading' => 'Wahlen',
-            'description' => '- Wählen gehen',
-            'done' => 0,
+            DB::table('category')->insert([
+            'cat_name' => 'Natur',
             'created_at' => '2017-09-13 00:00:00',
             'updated_at' => '2017-09-13 00:00:00',
         ]);
-            DB::table('list')->insert([
+            DB::table('category')->insert([
+            'cat_name' => 'Filme',
+            'created_at' => '2017-09-13 00:00:00',
+            'updated_at' => '2017-09-13 00:00:00',
+        ]);
+            DB::table('heading')->insert([
+            'category_id' => 1,
             'user_id' => 1,
-            'category' => 'Natur',
-            'heading' => 'Garten',
-            'description' => '- Rasnemähen',
-            'done' => 1,
+            'head_name' => 'Fussball',
+            'ges_done' => 0,
+            'created_at' => '2017-09-13 00:00:00',
+            'updated_at' => '2017-09-13 00:00:00',
+        ]);
+
+            DB::table('heading')->insert([
+            'category_id' => 2,
+            'user_id' => 1,
+            'head_name' => 'Wahlen',
+            'ges_done' => 0,
+            'created_at' => '2017-09-13 00:00:00',
+            'updated_at' => '2017-09-13 00:00:00',
+        ]);
+            DB::table('heading')->insert([
+            'category_id' => 3,
+            'user_id' => 1,
+            'head_name' => 'Garten',
+            'ges_done' => 0,
+            'created_at' => '2017-09-13 00:00:00',
+            'updated_at' => '2017-09-13 00:00:00',
+        ]);
+            DB::table('heading')->insert([
+            'category_id' => 4,
+            'user_id' => 2,
+            'head_name' => 'DVDs',
+            'ges_done' => 0,
+            'created_at' => '2017-09-13 00:00:00',
+            'updated_at' => '2017-09-13 00:00:00',
+        ]);
+            DB::table('task')->insert([
+            'heading_id' => 1,
+            'tas_name' => 'Bälle kaufen',
+            'done'    => 0,
+            'created_at' => '2017-09-13 00:00:00',
+            'updated_at' => '2017-09-13 00:00:00',
+        ]);
+            DB::table('task')->insert([
+            'heading_id' => 2,
+            'tas_name' => 'Wählen gehen',
+            'done'    => 0,
+            'created_at' => '2017-09-13 00:00:00',
+            'updated_at' => '2017-09-13 00:00:00',
+        ]);
+            DB::table('task')->insert([
+            'heading_id' => 3,
+            'tas_name' => 'Laub rechen',
+            'done'    => 0,
+            'created_at' => '2017-09-13 00:00:00',
+            'updated_at' => '2017-09-13 00:00:00',
+        ]);
+            DB::table('task')->insert([
+            'heading_id' => 4,
+            'tas_name' => 'Sortieren',
+            'done'    => 0,
+            'created_at' => '2017-09-13 00:00:00',
+            'updated_at' => '2017-09-13 00:00:00',
+        ]);
+            DB::table('task')->insert([
+            'heading_id' => 4,
+            'tas_name' => 'Abstauben',
+            'done'    => 0,
             'created_at' => '2017-09-13 00:00:00',
             'updated_at' => '2017-09-13 00:00:00',
         ]);

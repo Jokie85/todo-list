@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23.10.2017, 00:06:03
+    Author     : Jokie
+*/
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+/*  Variables */
+@import "variables";
+
+/* Bootstrap */
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,600,400);
+
+/*Projekt CSS-Dateien*/
+@import 'start.css';
+@import 'addTask.css';
+@import 'logreg.css';
+@import 'styles.scss';
+@import 'show.css';
+@import 'list.css';
+
+body{
+    /*https://www.pexels.com/photo/hd-wallpaper-ivy-leaves-wall-207301/*/
+    background-image: url("../images/board.jpeg");
+    background-color: rgba(228, 213, 170, 1);
+    background-size: 100%;
+    height: 100%;
+    width: 99%;
+}
+
+.input-boxes{
+    font-size: 15px;
+    height:25px;
+    width: 400px;
+    margin-left: 20px;
+    background-color: #FFFFFF;
+}
+/* Bestätigungs Box*/
+.alert{
+    height:50px;
+    width: 450px;
+    background-color: #CCFFCC;
+    float: top;  
+    margin: auto;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border:solid;
+    border-color: lightgreen;
+}
+
+
+/* Zurück Button*/
+/*https://codepen.io/lemmin/pen/WObwRX*/
+#back-button {
+  text-decoration:none;
+  color:#FFF;
+  margin: 20px 0 0 250px;
+}
+.rainbow-button {
+  width:calc(6vw + 6px);
+  height:calc(2vw + 6px);
+  background-image: linear-gradient(90deg, #00FF00 0%, #00CC00 49%, #009900 80%, #006600 100%);
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  font-size:1vw;
+  font-weight:bold;
+}
+.rainbow-button:after {
+  content:attr(alt);
+  width:6vw;
+  height:2vw;
+  background-color:#191919;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.rainbow-button:hover {
+  animation:slidebg 4s linear infinite;
+}
+/* ---------------------------------------------------------------------------------------------------*/

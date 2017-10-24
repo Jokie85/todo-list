@@ -4,26 +4,26 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateListTable extends Migration
+class CreateHeadingTable extends Migration
 {
     /**
      * Run the migrations.
      *
      * @return void
      */
-    //Hier wird die Tabelle 'List' erstellt, im Ordner Seeder liegt die
-    //Datei 'TaskTableSeeder' um Testdaten in die Tabelle zu füllen. 
     public function up()
     {
-        Schema::create('List', function (Blueprint $table) {
+        Schema::create('Heading', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->increments('id');
+            $table->integer('category_id')
+                    ->unsigned()
+                    ->index();
             $table->integer('user_id')
                     ->unsigned()
                     ->index();
-            $table->string('category');
-            $table->string('heading');
-            $table->text('description');
-            $table->boolean('done');
+            $table->text('head_name');
+            $table->boolean('ges_done');
             $table->timestamps();
         });
 
@@ -36,6 +36,6 @@ class CreateListTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('List');
+        Schema::dropIfExists('Heading');
     }
 }

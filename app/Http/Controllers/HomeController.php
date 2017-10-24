@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Task;
+use App\Heading;
+use App\Category;
+use Auth;
 
 class HomeController extends Controller
 {
