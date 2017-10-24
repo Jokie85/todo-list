@@ -15,26 +15,15 @@ Datenbank Konfiguration
         ],
 
 Das gleiche in der .env Datei
-
-
 _____________________________________________________________
 
-
 //Composer in das Projekt Installieren:
-
-
-
 Console starten:
 
 	- cd "Projekt Pfad"
-
 	
-- composer install
-	
-
-
+	- composer install
 _____________________________________________________________
-
 
 //Projekt Datenbank/Tabellen migration und Testdaten über Seeder erstellenn.
 
