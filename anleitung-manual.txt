@@ -16,12 +16,39 @@ Datenbank Konfiguration
 
 Das gleiche in der .env Datei
 
+
 _____________________________________________________________
 
-//Projekt Datenbank/Tabellen migration und Testdaten über Seeder erstellen
 
-php artisan serve
+//Composer in das Projekt Installieren:
 
-php artisan migrate
 
-php artisan db:seed --class=TaskTableSeeder
+
+Console starten:
+
+	- cd "Projekt Pfad"
+
+	
+- composer install
+	
+
+
+_____________________________________________________________
+
+
+//Projekt Datenbank/Tabellen migration und Testdaten über Seeder erstellenn.
+
+Console starten:
+	
+- cd "Projekt Pfad"
+
+- php artisan serve
+	
+- php artisan migrate
+
+- php artisan db:seed --class=TaskTableSeeder
+	
+
+fertig!!!
+
+Nur noch registrieren und Einloggen :)
